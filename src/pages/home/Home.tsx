@@ -1,5 +1,4 @@
-import { Box, Image, Text } from "@chakra-ui/react";
-import BG from "../../assets/img/bg.svg";
+import { Box, Text } from "@chakra-ui/react";
 import CustomButton from "../../components/Button";
 
 const Home = () => {

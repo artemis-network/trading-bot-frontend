@@ -1,5 +1,4 @@
-import { Box, Divider, Image, Text } from "@chakra-ui/react";
-import BG from "../../assets/img/bg.svg";
+import { Box, Divider, Text } from "@chakra-ui/react";
 import CustomButton from "../../components/Button";
 import { CheckIcon } from "@chakra-ui/icons";
 
@@ -20,13 +19,6 @@ const Pricing = () => {
       fontWeight="bold"
       color={"blue.900"}
     >
-      <Image
-        height={"92vh"}
-        width="100vw"
-        src={BG}
-        position="absolute"
-        zIndex={1}
-      />
       <Box
         zIndex={2}
         display={"flex"}

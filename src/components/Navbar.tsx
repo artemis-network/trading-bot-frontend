@@ -10,7 +10,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { FiMenu, FiActivity } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate } from "react-router";
 
@@ -62,8 +62,12 @@ const Navbar = () => {
                 ))}
               </ButtonGroup>
               <HStack spacing="3">
-                <Button variant="ghost">Sign in</Button>
-                <Button variant="ghost">Sign up</Button>
+                <Button onClick={() => navigate("/signin")} variant="ghost">
+                  Sign in
+                </Button>
+                <Button onClick={() => navigate("/signup")} variant="ghost">
+                  Sign up
+                </Button>
               </HStack>
             </Flex>
           ) : (
