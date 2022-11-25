@@ -7,7 +7,6 @@ import {
   IconButton,
   Text,
   useBreakpointValue,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
@@ -45,12 +44,14 @@ const Navbar = () => {
 
   return (
     <Box bg={"blue.100"} zIndex={4} as="section">
-      <Box
-        as="nav"
-        bg="bg-surface"
-        boxShadow={useColorModeValue("sm", "sm-dark")}
-      >
-        <HStack position={"sticky"} p={2} spacing="10" justify="space-between">
+      <Box as="nav" bg="bg-surface">
+        <HStack
+          boxShadow={"lg"}
+          position={"sticky"}
+          p={2}
+          spacing="10"
+          justify="space-between"
+        >
           <Text fontSize={"3xl"}>TradeBot</Text>
           {isDesktop ? (
             <Flex justify="space-between" flex="1">

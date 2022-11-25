@@ -7,7 +7,6 @@ if (SERVER === "PROD") URL = "https://api.axlegames.io";
 const axlegamesPrefix = URL + "/trade-bot/api/v1/";
 const userPrefix = axlegamesPrefix + "users";
 const botPrefix = axlegamesPrefix + "bots";
-console.log(userPrefix);
 const gamePrefix = axlegamesPrefix + "games";
 const referralPrefix = axlegamesPrefix + "referrals";
 

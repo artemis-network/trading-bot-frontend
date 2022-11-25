@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar";
 import Pricing from "./pages/pricing/Pricing";
 import Signup from "./pages/auth/Signup";
 import Signin from "./pages/auth/Siginin";
-import DashBoard from "./pages/dashboard/Dashboard";
+import TradingBot from "./pages/dashboard/TradingBot";
+import DashBoard from "./pages/dashboard/DashBoard";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -17,6 +18,7 @@ export const App = () => (
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/trading-bots" element={<TradingBot />} />
         <Route path="/dashboard" element={<DashBoard />} />
       </Routes>
     </Box>
